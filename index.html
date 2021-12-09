@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Reconciliation App</title>
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <div>
+                <label>
+                    Opening Balance: 
+                    <input type="number" id="opening_balance">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Balance at hand: 
+                    <input type="number" id="actual_balance">
+                </label>
+            </div>
+            <div>
+                <label>
+                    Difference 
+                    <input type="text" id="balance" disabled>
+                </label>
+            </div>
+            <table id="data_table">
+                <tr>
+                    <th>Delete</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Running Balance</th>
+                </tr>
+            </table>
+            <div id="data_entry">
+            <form>
+                <label>
+                    Date: 
+                    <input type="date" id="input_date">
+                </label>
+                <label>
+                    Description 
+                    <input type="text" id="input_description">
+                </label>
+                <label>
+                    Amount 
+                    <input type="text" id="input_amount">
+                </label>
+            </div>
+            <div>
+                <input type="submit" id="input_button" value="Add Transaction">
+            </form>
+            </div>
+        </div>
+    </body>
+    <script src="listeners.js"></script>
+</html>
